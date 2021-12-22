@@ -1,0 +1,121 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+#container {
+    overflow-x: hidden;
+    background-color: darkgreen;
+}
+
+#container #circle {
+  position: fixed;
+  top: -100px;
+  left: -100px;
+  height: 200px;
+  width: 200px;
+  border-radius: 50%;
+  background-color: yellowgreen;
+  z-index: 1;
+  transition: transform 0.3s ease;
+}
+
+.rotate-circle {
+  transform: rotate(-65deg);
+   /* for rotation of circle using this */
+}
+
+.rev-rotate-circle {
+  transform: rotate(0deg);
+   /* for rotation of circle using this */
+}
+
+#container #circle img {
+  height: 30px;
+}
+
+#container #circle #menu {
+  position: absolute;
+  left: 125px;
+  top: 125px;
+  cursor: pointer
+}
+
+#container #circle #cancel {
+  position: absolute;
+  left: 63px;
+  top: 137px;
+  transform: rotate(65deg);
+  cursor: pointer
+}
+
+#container .nav {
+  position: absolute;
+  top: 80%;
+  transform-origin: top left;
+  transition: transform 0.3s ease;
+}
+
+#container .nav ul {
+  list-style: none;
+  cursor: pointer;
+  color: white;
+}
+
+#container .nav ul li:hover {
+  color: blue;
+}
+
+.hide-menu {
+  transform: translateX(-15vw);
+}
+
+.show-menu {
+  transform: translateX(25px);
+}
+
+#page-content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  position: relative;
+  transform-origin: left top;
+  transition: transform 0.3s ease;
+  background-color: white;
+}
+
+.rotate-page-content {
+  transform: rotate(-10deg);
+  /* for rotation set this value */
+}
+
+.rev-rotate-page-content {
+  transform: rotate(0deg);
+  /* for rotation set this value */
+}
+
+#page-content h1 {
+  text-align: center;
+}
+
+#page-content #image-container {
+  display: flex;
+  justify-content: center;
+}
+
+#page-content #image-container img {
+  width: 30vw;
+  height: 70vh;
+  min-width: 250px;
+}
+
+#page-content #text-container {
+  width: 90vw;
+  margin: 5px;
+  display: flex;
+  flex-direction: column;
+}
+
+#page-content #text-container p {
+  margin: 5px;
+}
