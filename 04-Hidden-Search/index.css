@@ -1,0 +1,34 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+#container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.input {
+  height: 0px;
+  width: 0px; /*width & height necessary for transition and correct position */
+  font-size: 20px;
+  visibility: hidden;
+  transition: width 0.3s ease;
+}
+
+.input-visible {
+  visibility: visible;
+  height: 35px;
+  width: 200px;
+}
+
+#icon-container {
+  cursor: pointer;
+  margin-left: 5px;
+}
+
+#icon-container img {
+  height: 35px;
+}
