@@ -1,0 +1,36 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+#container {
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+img {
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    filter: blur(30px);
+    transition: filter 2s ease;
+}
+
+.img-clear {
+    filter: blur(0px);
+} 
+
+p {
+    color: white;
+    font-size: 50px;
+    position: relative;
+    opacity: 1;
+    transition: opacity 2s ease;
+}
+
+.p-opacity {
+    opacity: 0;
+}
