@@ -1,0 +1,104 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+:root {
+    --primary-color: black;
+    --secondary-color: white;
+}
+
+html.dark {
+    --primary-color: white;
+    --secondary-color: black;
+}
+
+#container {
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--secondary-color);
+    transition: all 0.5s ease-in;
+}
+
+button {
+    position: absolute;
+    top: 100px;
+    padding: 10px 20px;
+    background-color: var(--primary-color);
+    color: var(--secondary-color);
+    border: 0;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+p {
+    font-size: 30px;
+    color: var(--primary-color);
+}
+
+.clock-container {
+    width: 300px;
+    height: 300px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.clock {
+    width: 200px;
+    height: 200px;
+    background-color: var(--secondary-color);
+    position: relative;
+    border-radius: 100px;
+    border: 2px solid var(--primary-color);
+    transform: rotate(-90deg);
+}
+
+.second {
+    background-color: var(--primary-color);
+    height: 0.8px;
+    width: 90px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform-origin: left center;
+    transform: rotate(-90deg);
+}
+
+.minute {
+    background-color: var(--primary-color);
+    height: 2px;
+    width: 75px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform-origin: left center;
+    transform: rotate(90deg);
+}
+
+.hour {
+    background-color: var(--primary-color);
+    height: 2.5px;
+    width: 50px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform-origin: left center;
+    transform: rotate(45deg);
+}
+
+.clock-center {
+    background-color: var(--primary-color);
+    width: 10px;
+    height: 10px;
+    border-radius: 5px;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+}
+
